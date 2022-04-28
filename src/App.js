@@ -3,11 +3,11 @@ import Header from "./Header";
 import "./App.css";
 
 function App() {
-  const techItems = ["macBook", "ipods", "speakerbox"];
+  const title = { hello: ["my", "nigga", "!"] };
 
   return (
     <div className="App">
-      <Header tech={techItems} bob={["items", "items2"]} />
+      <Header itemTitle={title.hello[2]} />
     </div>
   );
 }
