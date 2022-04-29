@@ -1,0 +1,39 @@
+.CartItem {
+   display: flex;
+}
+.CartItem-image {
+ width: 180px;
+ height: 180px;
+ padding-right:1rem; 
+}
+.CartItem-image img {
+    object-fit: cover;
+    width: 100%;
+}
+.CartItem-info {
+    flex-grow: 1;
+}
+
+/* .Info-title {
+
+}
+.Info-title h2{
+
+}
+.Info-stock {
+
+}
+.Item-actions{
+    
+}
+.Item-quantity {
+
+}
+
+.Item-delete {
+
+}
+
+.CartItem-price {
+
+} */

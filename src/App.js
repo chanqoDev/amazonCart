@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import CartItems from "./components/CartItems";
 import CartTotal from "./components/CartTotal";
+
 import "./App.css";
 
 function App() {
