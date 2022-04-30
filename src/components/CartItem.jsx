@@ -2,8 +2,6 @@ import React from "react";
 import "./CartItem.css";
 
 function CartItem() {
-  const t = "LITTLE RED BASEBALL CAP";
-
   return (
     <div className="CartItem">
       <div className="CartItem-image">
@@ -14,7 +12,7 @@ function CartItem() {
       </div>
       <div className="CartItem-info">
         <div className="Info-title">
-          <h2>{t}</h2>
+          <h2>LITTLE RED BASEBALL CAP</h2>
         </div>
         <div className="Info-stock">In Stock</div>
         <div className="Item-actions">

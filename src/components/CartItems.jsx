@@ -2,10 +2,10 @@ import React from "react";
 import CartItem from "./CartItem";
 import "./CartItems.css";
 
-function CartItems({ title }) {
+function CartItems({ items }) {
   return (
     <div className="CartItems">
-      <h1>{title}</h1>
+      <h1>Amazon </h1>
       <hr />
       <div className="CartItems-items">
         <CartItem />
