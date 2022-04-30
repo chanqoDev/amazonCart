@@ -9,9 +9,6 @@ function CartItems({ title }) {
       <hr />
       <div className="CartItems-items">
         <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import "./CartItem.css";
 
 function CartItem() {
-  const t = "It works, CAP";
+  const t = "LITTLE RED BASEBALL CAP";
 
   return (
     <div className="CartItem">
@@ -16,20 +16,21 @@ function CartItem() {
         <div className="Info-title">
           <h2>{t}</h2>
         </div>
-        <div className="Info-stock">In stock</div>
+        <div className="Info-stock">In Stock</div>
         <div className="Item-actions">
           <div className="Item-quantity">
             <select>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
+              <option value="1">Qty: 1</option>
+              <option value="2">Qty: 2</option>
+              <option value="3">Qty: 3</option>
+              <option value="4">Qty: 4</option>
             </select>
           </div>
+          <div className="items-actions-divider">|</div>
+          <div className="Item-delete">Delete</div>
         </div>
-        <div className="Item-delete">Delete</div>
       </div>
-      <div className="CartItem-price">$769.00</div>
+      <div className="CartItem-price">$69.00</div>
     </div>
   );
 }
