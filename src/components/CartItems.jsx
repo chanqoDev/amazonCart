@@ -8,7 +8,9 @@ function CartItems({ items }) {
       <h1>Amazon </h1>
       <hr />
       <div className="CartItems-items">
-        <CartItem />
+        {items.map((item, index) => (
+          <CartItem key={index} />
+        ))}
       </div>
     </div>
   );
