@@ -8,8 +8,8 @@ function CartItems({ items }) {
       <h1>Amazon </h1>
       <hr />
       <div className="CartItems-items">
-        {items.map((item, index) => (
-          <CartItem key={index} />
+        {items.map((item, idx) => (
+          <CartItem item={item} key={idx} />
         ))}
       </div>
     </div>

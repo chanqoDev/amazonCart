@@ -37,7 +37,7 @@ const items = [
   {
     title: "Metamask CAP",
     stock: "In stock",
-    image: "item-5.png",
+    image: "item-6.png",
     price: "219.99",
     quantity: 3,
   },

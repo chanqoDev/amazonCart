@@ -1,23 +1,22 @@
 import React from "react";
 import "./CartItem.css";
 
-function CartItem() {
+function CartItem({ item }) {
+  console.log(item.image);
   return (
     <div className="CartItem">
       <div className="CartItem-image">
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F718hq5Fb04L._AC_UL1200_.jpg&f=1&nofb=1"
-          alt=""
-        />
+        <img src={process.env.PUBLIC_URL + "./items/" + item.image} alt="" />
+        {/* <img src={process.env.PUBLIC_URL + "/yourPathHere.jpg"} /> */}
       </div>
       <div className="CartItem-info">
         <div className="Info-title">
-          <h2>LITTLE RED BASEBALL CAP</h2>
+          <h2>{item.title}</h2>
         </div>
-        <div className="Info-stock">In Stock</div>
+        <div className="Info-stock">{item.stock}</div>
         <div className="Item-actions">
           <div className="Item-quantity">
-            <select>
+            <select value={item.quantity}>
               <option value="1">Qty: 1</option>
               <option value="2">Qty: 2</option>
               <option value="3">Qty: 3</option>
@@ -28,7 +27,7 @@ function CartItem() {
           <div className="Item-delete">Delete</div>
         </div>
       </div>
-      <div className="CartItem-price">$69.00</div>
+      <div className="CartItem-price">{item.price}</div>
     </div>
   );
 }

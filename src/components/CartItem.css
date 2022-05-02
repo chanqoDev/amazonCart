@@ -2,14 +2,17 @@
    display: flex;
    border-bottom: 1px solid #DDDDDD; 
    padding: 12px 0;
+   
 }
 .CartItem-image {
- width: 180px;
- height: 180px;
- padding-right:1rem; 
+ width: 190px;
+ height: auto;
+ padding-right: 1rem; 
+ flex-grow: 0; 
+ flex-shrink: 0; 
 }
 .CartItem-image img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
 }
 .CartItem-info {
@@ -57,4 +60,5 @@ color: #007185;
 .CartItem-price {
 font-size: 20px;
 font-weight: 700;
+margin-right: 20px;
 } 
