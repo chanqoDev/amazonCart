@@ -23,3 +23,8 @@ outline: none;
 .CartTotal-price {
 margin-left: 8px;
 }
+
+h3 > div {
+margin-left: 5px;
+display: inline-flex;
+}
