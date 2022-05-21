@@ -1,30 +1,31 @@
 .CartTotal {
-    background-color: #ecf0f1;
-    flex: .3;  
-    padding: 20px; 
-    text-align: left;
+  background-color: #ecf0f1;
+  flex: 0.3;
+  padding: 20px;
+  text-align: left;
+  min-width: 300px;
 }
 
 .CartTotal button {
-background-color: #f0c14b;
-font-size: 16px;
-width: 100%;
-border-radius: 4px;
-border: 2px solid #a88734;
-padding: 4px 8px;
-cursor: pointer;
+  background-color: #f0c14b;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #a88734;
+  padding: 4px 8px;
+  cursor: pointer;
 }
 .CartTotal button:hover {
-    background: #ddb347; 
+  background: #ddb347;
 }
 .CartTotal button {
-outline: none; 
+  outline: none;
 }
 .CartTotal-price {
-margin-left: 8px;
+  margin-left: 8px;
 }
 
 h3 > div {
-margin-left: 5px;
-display: inline-flex;
+  margin-left: 5px;
+  display: inline-flex;
 }
