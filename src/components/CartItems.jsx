@@ -8,14 +8,14 @@ function CartItems({ items, setCartItems }) {
     // pass in the index
     // using the index we need to change the quanity to the selected on form select option
     // then we need to update the items state, because the state is inside our useState;
-    alert(e.target.value);
+    // console.log(e.target.value);
     console.log("index", index);
 
     // DO NOT UPDATE THE STATE WIHTOUT A SETTER FUNCTION IN REACT
     // this will create a deep clone, COnstruct and assing to an array that is a deep copy clone
     const newItems = [...items];
-    items[index].quantity = e.target.value;
-    setCartItems(items);
+    newItems[index].quantity = e.target.value;
+    setCartItems(newItems);
   };
   return (
     <div className="CartItems">
